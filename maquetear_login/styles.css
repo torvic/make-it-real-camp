@@ -1,0 +1,114 @@
+/* ******** Custom properties ******** */
+:root {
+	--first-color: cornflowerblue;
+	--second-color: rgb(228, 219, 245);
+	--third-color: slateblue;
+	--white-color: #ffffff;
+}
+/* ******** Reset ******** */
+html {
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+}
+
+figure {
+	margin: 0;
+}
+
+/* ******** first section ******** */
+.first-section {
+	background-color: var(--first-color);
+	height: 232px;
+	width: 100%;
+	transition: background-color 2s;
+}
+.first-section__title {
+	margin: 0;
+	padding: 32px 0;
+	text-align: center;
+	color: #fff;
+}
+@media screen and (min-width: 992px) {
+	.first-section {
+		background-color: var(--third-color);
+	}
+}
+/* ******** e-container ******** */
+.e-container {
+	background-color: var(--second-color);
+	height: 100vh;
+}
+/* ******** Login ******** */
+.login {
+	position: relative;
+	top: -80px;
+	background-color: var(--white-color);
+	width: 90%;
+	margin: auto;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	height: 380px;
+	padding: 2rem;
+}
+.login__figure {
+	color: var(--first-color);
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.login__input {
+	width: 100%;
+	border-style: none;
+	border-bottom: 2px solid #ccc;
+	padding: .5rem 0;
+	margin-bottom: 1rem;
+	outline: none;
+}
+
+.login__checkbox {
+	margin: 0;
+	border: 2px solid #ccc;
+}
+.login__actions {
+	margin: 1rem 0;
+	text-align: center;
+}
+.login__button {
+	background-color: var(--first-color);
+	border: 0;
+	padding: .5rem 2rem;
+	border-radius: 5px;
+	color: var(--white-color);
+}
+@media screen and (min-width: 576px) {
+	html {
+		font-size: 16px;
+	}
+	.login {
+		width: 60%;
+	}
+}
+@media screen and (min-width: 992px) {
+	html {
+		font-size: 18px;
+	}
+	.login {
+		width: 50%;
+	}
+}
+@media screen and (min-width: 1200px) {
+	html {
+		font-size: 21px;
+	}
+	.login {
+		width: 40%;
+	}
+}
